@@ -1,0 +1,70 @@
+  
+  Primitive types / Պարզունակ տիպեր
+
+ 1․ Number - 1, 2, 3, 4,    1.1, 2.5, 6.7
+ 2. String - "name", 'someWord', լիտերալ,իր մեջ փոփոխականներ ենք հայտարարում $-ի նշանը կպած`
+ 3. Boolean - true / false
+ 4. Null - ոչինչ չկա
+ 5․ undefined - չի գտնվել
+ 6․ symbol - back- end - ում է օգտագործվում
+ 7. BigInt - շատ մեծ թվերի հետ է աշխատում
+
+  
+   Reference types/ Object types
+
+ 1. Array - զանգված
+ 2․ function - ֆունկցիա
+ 3․ new Date() - օր, ամիս, վարկյան, միլիվարկյան
+ 4․ new RegExp - regular expresion - object - կոդերը կարճացնում է
+ 5. new Error - object
+ 6. objects
+
+ Java script-ում ամեն ինչ օբեկտ է (object),այսինքն object-ից է ժառանգվում։ typeof()
+ մեթոդը կանչելով,իմանում ենք, թե տվյալ 
+ օբեկտը ինչ տիպին է պատկանում։Երբ consol.log()-ով կանչենք typeof()մեթոդը, ապա՝
+
+ 1․ const a = [];
+    console.log(typeof(a));  պատասխանում է object
+
+ 2․ function a() { }
+    console.log(typeof(a));  պատասխանում է function
+
+ 3. const a = new Date();
+    console.log(typeof(a)); պատասխանում է object
+
+ 4. const a = new RegExp();
+    console.log(typeof(a));  պատասխանում է object
+
+ 5. const a = new Error();
+    console.log(typeof(a));  պատասխանում է object
+
+
+
+ 6. const a = null;
+    console.log(typeof(a));  պատասխանում է object (անբացատրելի թերություն (bug))
+
+ 7. const a = NaN(); // not a number
+    console.log(typeof(a));  պատասխանում է number (անբացատրելի թերություն (bug))
+
+ 8. const a = 542;
+    console.log(typeof(a)); պատասխանում է number 
+
+ 9. console.log(typeof(Number)); պատասխանում է function,
+    console.log(typeof(Number(15))); պատասխանում է number
+
+ 10. console.log(typeof(Boolean)); պատասխանում է function,
+     console.log(typeof(true/false)); պատասխանում է boolean,
+ 
+
+ 11. console.log(typeof(String)); պատասխանում է function
+
+ 12. console.log(typeof(Array)); պատասխանում է function
+
+ 13. console.log(typeof(undefined));  պատասխանում է undefined
+
+ 14. const max = Number.MAX_SAFE_INTEGER;
+     console.log(typeof(max));
+
+
+
+
