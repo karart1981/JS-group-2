@@ -130,7 +130,7 @@ const app = {
 	}
 };
 
-app.isOpened(24, 24);
+app.isOpened(9, 24);
 
 const client = app.callCenter();
 const anotherClient = app.favoriteCook(app.restaurantStaff[9].cook);
