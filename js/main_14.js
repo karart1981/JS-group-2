@@ -45,10 +45,16 @@ console.log(result);
 համար */
 const calc = (x, y, operation)=>{
 
-	switch (operation) {
+	switch (operation,"+") {
 		case "+": console.log(x + y); break;
 		case "-":console.log(x - y); break;
-		case "/":console.log(x / y); break;
+		case "/":
+			if(y === 0){
+				console.log("Թիվը չի բաժանվում 0-ի։");
+			} else{
+				console.log(x / y); break;
+			}
+		; break;
 		case "*":console.log(x * y); break;
 	  default: console.log(x % y);
 	}
