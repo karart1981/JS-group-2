@@ -56,7 +56,8 @@ const calc = (x, y, operation)=>{
 			}
 		; break;
 		case "*":console.log(x * y); break;
-	  default: console.log(x % y);
+		case "-":console.log(x % y); break;
+	  default: console.log("Այդպիսի գործողություն չկա");
 	}
 };
 	
