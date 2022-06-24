@@ -11,15 +11,15 @@ let day = ["Երկուշաբթի", "Երեքշաբթի", "չորեքշաբթի",
 for(let g = 0; g < shift.length; g++){
 	console.log(shift[g]);
 	for(let l = 0; l< day.length; l++){
-	    for(let h = 0; h < workerGroup1; h++){
+	    for(let h = 0; h < workerGroup1.length; h++){
 		     console.log(workerGroup1[h]);
 		     break;
 	    }	
-	    for(let s = 0; s < workerGroup2; s++){
+	    for(let s = 0; s < workerGroup2.length; s++){
 			 console.log(workerGroup2[s]);
 		     break;
 	    }
-	    for(let r = 0; r < workerGroup3; r++){
+	    for(let r = 0; r < workerGroup3.length; r++){
 		     console.log(workerGroup3[s]);
 	         break;
         }
