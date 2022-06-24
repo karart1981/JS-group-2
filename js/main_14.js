@@ -3,24 +3,26 @@
 /*Ստեղծում եք 3 հատ  առանձին nested loop, որոնց մեջ պետք ա լինի 1, 2, և 3 հատ 
 loop` ըստ հերթականության, ստեղծում եք FOR-ով և WHILE-ով */
 
-let shift = [1,2,3];
-let worker = ["work_1", "work_2", "work_3", "work_4", "work_5", "work_6"];
-let day = ["day_1", "day_2", "day_3", "day_4", "day_5", "day_6"];
+let shift = ["1 հերթափոխ","2 հերթափոխ","3 հերթափոխ"];
+let workerGroup1 = ["Արմեն", "Կարինե"];
+let workerGroup2 = ["Մարտա", "Կարմեն"];
+let workerGroup3 = ["Աշոտ", "Արսեն"];
+let day = ["Երկուշաբթի", "Երեքշաբթի", "չորեքշաբթի", "հինգշաբթի", "ուրբաթ", "շաբաթ"];
 for(let g = 0; g < shift.length; g++){
 	console.log(shift[g]);
 	for(let l = 0; l< day.length; l++){
-	for(let h = 0; h <=worker[2]; h++){
-		console.log(worker[h]);
-		break;
-	}	
-	for(let s = 0; s <=worker[4]; s++){
-			console.log(worker[s]);
-		break;
-	}
-	for(let r = 0; r <= worker[6]; r++){
-		console.log(worker[s]);
-	    break;
-}
+	    for(let h = 0; h < workerGroup1; h++){
+		     console.log(workerGroup1[h]);
+		     break;
+	    }	
+	    for(let s = 0; s < workerGroup2; s++){
+			 console.log(workerGroup2[s]);
+		     break;
+	    }
+	    for(let r = 0; r < workerGroup3; r++){
+		     console.log(workerGroup3[s]);
+	         break;
+        }
 	}
 
 }
