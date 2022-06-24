@@ -423,4 +423,4 @@ const data = (name)=>{
 const mig =(age,location)=>{
 	console.log(`Ձեր տարիքն է ${age},դուք ${location}ից եք:`);
 };
-mig(19,"ք․Երևան",data("Արմինե"));
+mig(19,"ք․Երևան",data("Աստղիկ"));
