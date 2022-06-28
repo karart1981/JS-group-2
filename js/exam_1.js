@@ -208,6 +208,7 @@ Dependecy-ի մեջ գնում է այն կախվածությունները,որ
 (անկյունները կոտրած), քառակուսի, եռանկյունի, 
 ուղղանկյուն, երկու քառակուսի իրար կողք և ցանկացած տառ (latin)
 
+
 //քառակուսի
 const NUMBER = 7
 let square = "";
@@ -688,3 +689,18 @@ const a = 5, b = 10;
 !(a < b);  // false
 !(a > b); // true */
 
+function createTrangle(width) {
+	let result = "";
+	for (let i = 1; i <= width; i++) {
+		for (let j = 1; j <= width * 2 - 1; j++) {
+			if (j <= width - i || j >= width + i) {
+				result += " ";
+			} else {
+				result += "*";
+			}
+		}
+		result += "\n";
+	}
+	return result;
+}
+console.log(createTrangle(7));
