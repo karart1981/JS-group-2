@@ -8,15 +8,24 @@ false ապա գլխավոր օբջեքթը չպետք ա կոնսոլ լինի, 
 թիվը, այսինքն առաջին հարցը կլինի 1, երկրորդ հարցը կլինի 2, երրորդ հարցը կլինի 3, 
 ու էդ ամեն ինչը պետք ա գրեք genres անունով զանգվածի մեջ
 3․ պետք ա ներկայիս կոդը օպտիմիզացնեք ու ձեր ստեղծած մեթոդները դնեք ստուգման տակ,
-որպեսզի յուզեռը չկարողանաք ոչ քենսլ անի, ոչ դատարfiկ վալյու ուղարկի ոչ էլ 20ից շատ 
+որպեսզի յուզեռը չկարողանաք ոչ քենսլ անի, ոչ դատարկ վալյու ուղարկի ոչ էլ 20ից շատ 
 տառ
 +4. numberOfFilms-ը պետք ա լինի ՄԻԱՅՆ ԹԻՎ, եթե թիվ չի while-ով էնքան անել, որ 
 յուզեռը թիվ գրի */
 
 let numberOfFilms;
-do {
+if(numberOfFilms != "number" && numberOfFilms !== 0) {
 	numberOfFilms = +prompt("Քանի՞ ֆիլմ եք դիտել այսօր", "Խնդրում եմ նշեք թիվ");
-} while (isNaN(numberOfFilms) || numberOfFilms === 0);
+	if(numberOfFilms <=10){
+		alert("Դուք ազատ ժամանակ նայում եք ֆիլմեր");
+	}else if(numberOfFilms <=20){
+		alert("Դուք կինոյի սիրահար եք");
+	} else{
+		alert("Դուք կինոման եք");
+	}
+} else{
+  numberOfFilms --;
+}
 
 let a;
 do {
@@ -29,35 +38,39 @@ do {
 	b = +prompt("1-10 ինչքա՞ն կգնահատեք այդ ֆիլմը", "Խնդրում եմ նշեք թիվ");
 } while (b === 0 || isNaN(b));
 
-let c;
-  do{
-	for(let i =0; i >3; i++){
+let c = personalMovieDB.genres;
+let res = 0;
+if(c === "" || c === null || c.length > 20 || c === undefined){
 	c = prompt("Ձեր նախընտրած ժանրը", "Խնդրում եմ գրեք հայերեն");
-	}
-   }
-   
-while(c !== "դրամա" && c !== "կոմեդիա" && c !== "պատմական" && c !== "վեսթերն" && c !== "18+" && c !== "մելոդրամա" && c !== "ֆանտաստիկա" && c !== "սարսափ" && c !== "կենսագրություն" && c !== "դետեկտիվ" && c !== "կրիմինալ" && c !== "վավերագրական" && c !== "ֆենթզի" && c !== "մարտաֆիլմ" && c !== "թրիլլեր" && c !== "ընտանեկան" && c !== "արկածային");
+} else{
+	c--;
+}
 
-personalMovieDB.movies[a] = b;
-personalMovieDB.numberOfFilms = numberOfFilms;
-personalMovieDB.genres[i] = c;
-
-
+	
+	
 const personalMovieDB = {
 	count: numberOfFilms,
 	movies: {},
 	actors: {},
 	genres: [],
-	privat: true
-};
-
-
-function showMyDB(privat){
-	if (privat === true) {
-		console.log("It's privat.");
-	} else {
-		console.log("it is not privat.");
+	privat: true,
+	showMyDB(){
+		return  personalMovieDB.privat === true ? console.log("It's privat."): console.log("it is not privat.");
+	},
+	yourFavoriteGenres(){
+		personalMovieDB.genres=0;
+		for(let i = 0; i < 3; i++){
+		  personalMovieDB.genres = prompt("Ձեր նախընտրելի ժանրը", "Խնդրում եմ գրեք հայերեն");
+		  if(personalMovieDB.genres != null && personalMovieDB.genres !== "" && personalMovieDB.genres.length < 20){
+			personalMovieDB.genres += personalMovieDB.genres[i];
+		  } else{
+			i--;
+		  }
+		  
+		}
+		return personalMovieDB.genres;
 	}
-	
-}
-console.log(showMyDB(personalMovieDB.privat));
+};
+personalMovieDB.movies[a] = b;
+personalMovieDB.numberOfFilms = numberOfFilms;
+personalMovieDB.showMyDB();
