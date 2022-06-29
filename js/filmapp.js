@@ -47,7 +47,6 @@ if(c === "" || c === null || c.length > 20 || c === undefined){
 }
 
 	
-	
 const personalMovieDB = {
 	count: numberOfFilms,
 	movies: {},
@@ -57,19 +56,7 @@ const personalMovieDB = {
 	showMyDB(){
 		return  personalMovieDB.privat === true ? console.log("It's privat."): console.log("it is not privat.");
 	},
-	yourFavoriteGenres(){
-		personalMovieDB.genres=0;
-		for(let i = 0; i < 3; i++){
-		  personalMovieDB.genres = prompt("Ձեր նախընտրելի ժանրը", "Խնդրում եմ գրեք հայերեն");
-		  if(personalMovieDB.genres != null && personalMovieDB.genres !== "" && personalMovieDB.genres.length < 20){
-			personalMovieDB.genres += personalMovieDB.genres[i];
-		  } else{
-			i--;
-		  }
-		  
-		}
-		return personalMovieDB.genres;
-	}
+	
 };
 personalMovieDB.movies[a] = b;
 personalMovieDB.numberOfFilms = numberOfFilms;
