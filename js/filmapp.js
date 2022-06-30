@@ -14,7 +14,7 @@ false ապա գլխավոր օբջեքթը չպետք ա կոնսոլ լինի, 
 յուզեռը թիվ գրի */
 
 let numberOfFilms;
-if(numberOfFilms != "number" && numberOfFilms !== 0) {
+if(numberOfFilms != "number" && numberOfFilms !== 0 && numberOfFilms < 0) {
 	numberOfFilms = +prompt("Քանի՞ ֆիլմ եք դիտել այսօր", "Խնդրում եմ նշեք թիվ");
 	if(numberOfFilms <=10){
 		alert("Դուք ազատ ժամանակ նայում եք ֆիլմեր");
@@ -27,10 +27,13 @@ if(numberOfFilms != "number" && numberOfFilms !== 0) {
   numberOfFilms --;
 }
 
-let a;
-do {
+let a = personalMovieDB.movies;
+let result = 0;
+if(a !== "" || a !== null || a < 20 || a !== undefined || a != "number") {
 	a = prompt("Նշեք վերջին ֆիլմը, որը դիտել եք", "Խնդրում եմ գրեք հայերեն" );
-} while (a === "" || a === null || a.length > 20 || a === undefined);
+}else{
+	result --;
+}
 
 
 let b;
