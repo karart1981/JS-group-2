@@ -62,7 +62,7 @@ console.log(a); // ուղղակի օրինակը գրել եմ,որ մոտս լ�
 
 // 5 օրինակ
 const count ={
-    countryName_1:"Արաբական Միացյալ Էմիրություններ",
+    countryName_1:"ԱՄԷ",
     capital_1: "Աբու Դաբի",
     currency_1: "ԱՄԷ դիրհամ ( AED )",
     largestCities_1:{
@@ -81,8 +81,16 @@ const count ={
 	}
   },
   seeSightseeing(country){
-	if(country === "ԱՄԷ"){
-		console.log(count.sightseeing_1);
+	for(let key in count){
+		if(typeof count[key] === "object"){
+			for(let key_1 in count[key]){
+				if(key === count.seeSightseeing_1)
+				console.log(count.sightseeing_1);
+			}
+			
+		}else{
+			console.log(count.sightseeing_1);
+		}
 	}
   },
   OfficLang(country){
@@ -92,11 +100,11 @@ const count ={
   }
 
 };
-const {aboutVisaOf} = count;
-aboutVisaOf("ԱՄԷ");
+//const {aboutVisaOf} = count;
+//aboutVisaOf("ԱՄԷ");
 
 const {seeSightseeing} = count;
 seeSightseeing("ԱՄէ");
 
-const {OfficLang} = count;
-OfficLang("ԱՄէ");
+//const {OfficLang} = count;
+//OfficLang("ԱՄէ");
