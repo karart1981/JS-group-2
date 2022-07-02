@@ -80,28 +80,23 @@ const count ={
 		console.log("Կախված այցի տևողությունից և նպատակից՝ ՀՀ քաղաքացիներին ԱՄԷ վիզա կարող է տրամադրվել առցանց՝ https://www.instadubaivisa.com/dubai-visa-application-form.php կամ Հայաստանում ԱՄԷ-ի միգրացիոն ծառայության կողմից։");
 	}
   },
-  seeSightseeing:function(c){
-	for(let x in count){
-		if(c === "ԱՄԷ"){
-			console.log("");
-		}
+  seeSightseeing(country){
+	if(country === "ԱՄԷ"){
+		console.log(count.sightseeing_1);
 	}
-      
   },
-  OfficLang(){
-     if(count.countryName_1 === "Արաբական Միացյալ Էմիրություններ"){
+  OfficLang(country){
+     if(country === "ԱՄԷ"){
 		console.log(count.officialLanguage_1);
     }
   }
 
 };
+const {aboutVisaOf} = count;
+aboutVisaOf("ԱՄԷ");
 
-
-//const {aboutVisaOf} = count;
-//aboutVisaOf("ԱՄԷ");
-
-//const {seeSightseeing} = count;
-//seeSightseeing("ԱՄէ");
+const {seeSightseeing} = count;
+seeSightseeing("ԱՄէ");
 
 const {OfficLang} = count;
 OfficLang("ԱՄէ");
