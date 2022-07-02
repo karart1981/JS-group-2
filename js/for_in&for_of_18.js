@@ -88,22 +88,20 @@ const count ={
 	}
       
   },
-  sayOfficialLang({countryName_1}){
-     if(countryName_1 === "ԱՄԷ"){
-        console.log();
-	 } else{
+  OfficLang(){
+     if(count.countryName_1 === "Արաբական Միացյալ Էմիրություններ"){
 		console.log(count.officialLanguage_1);
-	 }
+    }
   }
 
 };
 
 
-const {aboutVisaOf} = count;
-aboutVisaOf("ԱՄԷ");
+//const {aboutVisaOf} = count;
+//aboutVisaOf("ԱՄԷ");
 
-const {seeSightseeing} = count;
-seeSightseeing("ԱՄէ");
+//const {seeSightseeing} = count;
+//seeSightseeing("ԱՄէ");
 
-const {sayOfficialLang} = count;
-sayOfficialLang("ԱՄէ");
+const {OfficLang} = count;
+OfficLang("ԱՄէ");
