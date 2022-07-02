@@ -81,15 +81,9 @@ const count ={
 	}
   },
   seeSightseeing(country){
-	for(let key in count){
-		if(typeof count[key] === "object"){
-			for(let key_1 in count[key]){
-				if(key === count.seeSightseeing_1)
-				console.log(count.sightseeing_1);
-			}
-			
-		}else{
-			console.log(count.sightseeing_1);
+	if(country === "ԱՄԷ"){
+		for(let key in count){
+			console.log(count.seeSightseeing_1);
 		}
 	}
   },
