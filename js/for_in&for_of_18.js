@@ -1,7 +1,4 @@
 "use strict";
-
-const { values } = require("lodash");
-
 // 1 օրինակ
 const countryForTourism = {
   nameCountry:"Արգենտինա",
