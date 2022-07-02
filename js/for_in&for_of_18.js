@@ -79,9 +79,7 @@ const count ={
   },
   seeSightseeing(country){
 	if(country === "ԱՄԷ"){
-		for(let key in count){
-			console.log(count.seeSightseeing_1);
-		}
+		console.log(count.sightseeing_1.s_item1);
 	}
   },
   OfficLang(country){
@@ -91,11 +89,11 @@ const count ={
   }
 
 };
-//const {aboutVisaOf} = count;
-//aboutVisaOf("ԱՄԷ");
+const {aboutVisaOf} = count;
+aboutVisaOf("ԱՄԷ");
 
 const {seeSightseeing} = count;
 seeSightseeing("ԱՄէ");
 
-//const {OfficLang} = count;
-//OfficLang("ԱՄէ");
+const {OfficLang} = count;
+OfficLang("ԱՄէ");
