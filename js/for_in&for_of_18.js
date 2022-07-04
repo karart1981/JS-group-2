@@ -58,7 +58,8 @@ const [, , , a] = test;
 console.log(a); // ուղղակի օրինակը գրել եմ,որ մոտս լինի
 
 // 5 օրինակ
-const count ={
+
+const tourismCountry ={
     countryName_1:"ԱՄԷ",
     capital_1: "Աբու Դաբի",
     currency_1: "ԱՄԷ դիրհամ ( AED )",
@@ -77,23 +78,40 @@ const count ={
 		console.log("Կախված այցի տևողությունից և նպատակից՝ ՀՀ քաղաքացիներին ԱՄԷ վիզա կարող է տրամադրվել առցանց՝ https://www.instadubaivisa.com/dubai-visa-application-form.php կամ Հայաստանում ԱՄԷ-ի միգրացիոն ծառայության կողմից։");
 	}
   },
-  seeSightseeing(country){
-	if(country === "ԱՄԷ"){
-		console.log(count.sightseeing_1.s_item1);
+  seeSight(country){
+    for(let s in tourismCountry){
+		if(tourismCountry[s] === tourismCountry.sightseeing_1){
+			for(let j in tourismCountry[s]){
+				console.log(tourismCountry[s][j]);
+			}
+		} else{
+			console.log(Object.keys(tourismCountry));
+		}
 	}
   },
-  OfficLang(country){
-     if(country === "ԱՄԷ"){
-		console.log(count.officialLanguage_1);
-    }
-  }
 
 };
-const {aboutVisaOf} = count;
+const {aboutVisaOf} = tourismCountry;
 aboutVisaOf("ԱՄԷ");
 
-const {seeSightseeing} = count;
-seeSightseeing("ԱՄէ");
+const {seeSight} = tourismCountry;
+seeSight("ԱՄէ");
 
-const {OfficLang} = count;
-OfficLang("ԱՄէ");
+// 6 օրինակ
+const arr = [
+	24, 
+	36,
+	function sayHello () {
+	  console.log("welcome!");
+	},
+	1,
+	50, 
+	function sayGoodBye () {
+	  console.log("Bye");
+	}
+];
+	
+	const[num1,num2,sayHello,num3,num4,goodBye]=arr;
+	
+	sayHello();
+	goodBye(); 
