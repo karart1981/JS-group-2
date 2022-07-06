@@ -59,6 +59,7 @@ console.log(a); // ուղղակի օրինակը գրել եմ,որ մոտս լ�
 
 // 5 օրինակ
 
+
 const tourismCountry ={
     countryName_1:"ԱՄԷ",
     capital_1: "Աբու Դաբի",
@@ -79,18 +80,13 @@ const tourismCountry ={
 	}
   },
   seeSight(country){
-    for(let s in tourismCountry){
-		if(tourismCountry[s] === tourismCountry.sightseeing_1){
-			for(let j in tourismCountry[s]){
-				console.log(tourismCountry[s][j]);
-			}
-		} else{
-			console.log(Object.keys(tourismCountry));
-		}
+          console.log(tourismCountry.sightseeing_1.s_item1);
 	}
-  },
+  
 
 };
+const {countryName_1,capital_1,currency_1,largestCities_1,officialLanguage_1,sightseeing_1,s_item1,s_item2,s_item3}=tourismCountry;
+
 const {aboutVisaOf} = tourismCountry;
 aboutVisaOf("ԱՄԷ");
 
