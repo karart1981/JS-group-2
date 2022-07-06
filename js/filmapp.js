@@ -8,7 +8,7 @@ const personalMovieDB = {
 	genres: [],
 	privat: true,
 	start:function(){ 
-	   numberOfFilms =	parseInt(prompt("Քանի՞ ֆիլմ եք դիտել այսօր", "Խնդրում եմ գրեք հայերեն"));
+	   numberOfFilms =	parseInt(prompt("Քանի՞ ֆիլմ եք դիտել այսօր", "Խնդրում եմ գրեք թվով"));
 		while (numberOfFilms == "" || numberOfFilms == null || isNaN(numberOfFilms)) {
 			numberOfFilms = parseInt(prompt("Քանի՞ ֆիլմ եք դիտել այսօր", "Խնդրում եմ գրեք թվով"));
 		}
@@ -47,7 +47,7 @@ const personalMovieDB = {
 			}
 		}
 		personalMovieDB.genres.forEach (function (item , index)  { 
-			console.log(`Ձեր նախընտրելի ժանրը.ժանր ${index+1} ${item}`,"Խնդրում եմ գրեք հայերեն");}); 
+			console.log(`Ձեր նախընտրելի ժանրը.ժանր ${index+1} ${item}`);}); 
 	},
 	showMyDB:function() {
 		if (personalMovieDB.privat === true) {
@@ -69,6 +69,6 @@ personalMovieDB.start();
 personalMovieDB.rememberMyFilms();
 personalMovieDB.detectUserPersonalLevel();
 personalMovieDB.yourFavoriteGenres();
-//personalMovieDB.isVisibleMyDB(personalMovieDB.showMyDB);
+personalMovieDB.isVisibleMyDB(personalMovieDB.showMyDB);
 
 
