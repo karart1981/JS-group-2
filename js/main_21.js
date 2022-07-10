@@ -1,7 +1,4 @@
 "use strict";
-
-const { main } = require("cli");
-
 /* 
 + 1. ստեղծել սեփական forEach ֆեւնկցիա, որը լրիվ նույն կերպ կաշխատի ինչպես 
 forEach-ը
