@@ -18,15 +18,16 @@ function fe(mainArr){
 fe(arr);
 
 //2
-const product = {
-  name:"Low Height Waterproof Hiking Shoe",
-  descript:"100% Leather",
-  size:[15, 16, 17],
-  price:"50 euro",
-  color:["grey", "black"],
-  isAvailable:true
-};
 // version 1 of copy object
+const product = {
+	name:"Low Height Waterproof Hiking Shoe",
+	descript:"100% Leather",
+	size:[15, 16, 17],
+	price:"50 euro",
+	color:["grey", "black"],
+	isAvailable:true
+};
+
 function copyFunc(mainObj){
   const copyMainObj = {};
   for(let key in mainObj){
@@ -38,9 +39,9 @@ const copyProduct = copyFunc(product);
 product.size = [18, 19, 20];
 product.price = "45 euro";
 product.color = "black";
-
 console.log(copyProduct);
 console.log(product); 
+
 
 
 //version 2 of copy object
