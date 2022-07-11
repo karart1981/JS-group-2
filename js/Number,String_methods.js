@@ -32,7 +32,7 @@ console.log(Upper); /*  ստեղծեցինք նոր փոփոխական,որ մե
 console.log(Upper.toLowerCase());
 console.log(Upper); // հինփոփոխականը մնումա նույն արժեքին
 //տեքստի մեջի ինդեքսը հնարավոր չի փոխել, օր՝
-
+let text = "հանրագիտարան";
 text[0] = "Գ";
 console.log(text); // տեքստի արժեքը մնում է նույնը
 

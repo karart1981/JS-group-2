@@ -142,14 +142,15 @@ console.log(copyNum);
 
 
 
+
 // function look like split operator
 
 const str = "Armine Lusine Karine";
-function sp(str, arr){
+function mySplice(str, arr){
   const i = str.indexOf(" ");
   if (i > -1) {
     arr.push(str.slice(0, i));
-    sp(str.slice(i + 1), arr);
+    mySplice(str.slice(i + 1), arr);
   } else {
     arr.push(str);
   }
@@ -157,7 +158,7 @@ function sp(str, arr){
 };
 function parts(str){
   const arr = [];
-  sp(str, arr);
+  mySplice(str, arr);
   return arr;
 };
 console.log(parts(str));
@@ -165,9 +166,8 @@ console.log(parts(str));
 
 
 // function look like sort method
-const n = [54, 12, 41];
-
-function s(array) {
+const n = [54, 12, 41, 2, 5, 465,22];
+function mySort(array) {
 	let done = false;
 	while (!done) {
 	  done = true;
@@ -180,11 +180,9 @@ function s(array) {
 		}
 	  }
 	}
-  
-	return array;
+    return array;
   }
-  
-  console.log(s(n));
+console.log(mySort(n));
 
 
 
