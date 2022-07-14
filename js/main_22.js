@@ -14,7 +14,7 @@ console.log(someArr);
 const dArr = [4, 2, 5, 7];
 function myDebugger(arr){
   for(let i =0;i <arr.length;i++){
-	arr[i] = arr[i]*5+5- arr[j];
+	arr[i] = arr[i]*5+5- arr[i];
 	
   }
   return arr;
