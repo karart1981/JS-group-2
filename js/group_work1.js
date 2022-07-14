@@ -1,8 +1,8 @@
 /* 
-+1. isOpen ֆունկցիան չի ցանկանում ճիշտ աշխատել,արդյունքը միշտ սխալ է ցույց 
+1. isOpen ֆունկցիան չի ցանկանում ճիշտ աշխատել,արդյունքը միշտ սխալ է ցույց 
 տալիս, պետք է գտնել խնդիրը ու լուծել։
 
-+2․ isAverageLunchPriceTrue ֆունկցիան պետք է վերցնի ցանկացած երկու ուտելիքի
+2․ isAverageLunchPriceTrue ֆունկցիան պետք է վերցնի ցանկացած երկու ուտելիքի
 գին մենյույի մեջից գումարի իրար հետ ու համեմատի averageLunchPriceի հետ
 
 3․ transferWaitors ֆունկցիան ստեղծվել է նրա համար, որ կլոնավորի տվյալնների 
@@ -50,7 +50,7 @@ function isOpen(prop) {
 
     return answer;
 }
-console.log(isOpen(restorantData.openNow));
+//console.log(isOpen(restorantData.openNow));
 
 
 function isAverageLunchPriceTrue(fDish, sDish, average) {
@@ -60,8 +60,20 @@ function isAverageLunchPriceTrue(fDish, sDish, average) {
         return 'Цена выше средней';
     }
 }
-console.log(isAverageLunchPriceTrue(restorantData.menu[1], restorantData.menu[2], restorantData.averageLunchPrice));*/
+//console.log(isAverageLunchPriceTrue(restorantData.menu[1], restorantData.menu[2], restorantData.averageLunchPrice));*/
 
+const copy = {};
+
+function transferWaitors(mainArr,arr){
+  arr = JSON.parse(JSON.stringify(mainArr));
+  arr.waitors[0].name = "Mike";
+  arr.waitors[0].age = 27;
+  arr.waitors[1].name = "Lucy";
+  arr.waitors[1].age = 30;
+  return arr;
+}
+console.log(transferWaitors(restorantData,copy));
+console.log(restorantData);
 
 
 
