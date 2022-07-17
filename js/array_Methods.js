@@ -69,6 +69,13 @@ const any = ["բանան", "խնձոր", "անանաս", "ծիրան"];
 console.log(any.join(", "));
 
 
+8. splice() => //այս մեթոդը վեցնում է զանգվածից տարրեր
+let months = ["January", "February", "Monday", "Tuesday"];
+let days = months.splice(2,2);
+
+console.log(days); // ["Monday", "Tuesday"]
+
+
 //array algoritms
 
 1. sort() => /* letter - այս մեթոդով սորտավորում ենք տառերը ըստ հերթականության */

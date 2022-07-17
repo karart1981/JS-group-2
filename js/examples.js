@@ -100,8 +100,20 @@ function mySpread_2(arr,copyArr){
 mySpread_2(x,y);
 
 
+//splice() - վերցնում է զանգվածից էլէմենտներ ու ստեղծում նոր զանգված
+
+let months = ["January", "February", "Monday", "Tuesday"];
+let days = months.splice(2,2);
+
+console.log(days); // ["Monday", "Tuesday"]
+
+
+console.log(typeof +("5"));
+const num = 15;
 
 
 
-
-
+let i = 0;
+function a1(){
+	
+}

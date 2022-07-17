@@ -1,80 +1,97 @@
 /* 
-1. isOpen ֆունկցիան չի ցանկանում ճիշտ աշխատել,արդյունքը միշտ սխալ է ցույց 
-տալիս, պետք է գտնել խնդիրը ու լուծել։
-
-2․ isAverageLunchPriceTrue ֆունկցիան պետք է վերցնի ցանկացած երկու ուտելիքի
-գին մենյույի մեջից գումարի իրար հետ ու համեմատի averageLunchPriceի հետ
-
-3․ transferWaitors ֆունկցիան ստեղծվել է նրա համար, որ կլոնավորի տվյալնների 
-թեմփլեյթը ու ուղարկի այլ ռեստորանի,իհարկե այլ ռեստորանում պետք է լինեն 
-ուրիշ ուտելիքներ,ուրիշ գներ, ու ուրիշ մատուցողներ։ Ներկա պահին այս 
-ֆունկցիան գտնվում է պատրաստման փուլում, դուք պետք է անեք այնպես, որ նոր 
-ռեստորանում փոխվեն միայն մատուցողների անուններն ու տարիքները,բայց ներկա 
-պահին ծրագիրը աշխատացնելուց տեսնում ենք, որ ինքը բավականին սխալ է աշխատում,
-նախ համ կլոնավորված ռեստորանն ա պարունակում նույն տվյալները, հետո էլ 
-տեսնում ենք որ մատուցող Alice-ը կորում ա ու տեղը գալիս է ինչ-որ Mike, 
-շտապ պետք է գտնել խնդիրը և ուղղել որպեսի ռեստորանները իրարից անկախ լինեն։
+	1. isOpen ֆունկցիան չի ցանկանում ճիշտ աշխատել,
+	արդյունքը միշտ սխալ է ցույց տալիս, պետք է գտնել
+	խնդիրը ու լուծել։
+	2․ isAverageLunchPriceTrue ֆունկցիան պետք է 
+	վերցնի ցանկացած երկու ուտելիքի գին մենյույի մեջից
+	գումարի իրար հետ ու համեմատի averageLunchPriceի հետ
+	3․ transferWaitors ֆունկցիան ստեղծվել է նրա համար, 
+	որ կլոնավորի տվյալնների թեմփլեյթը ու ուղարկի այլ ռեստորանի,
+	իհարկե այլ ռեստորանում պետք է լինեն ուրիշ ուտելիքներ, 
+	ուրիշ գներ, ու ուրիշ մատուցողներ։ Ներկա պահին այս ֆունկցիան
+	գտնվում է պատրաստման փուլում, դուք պետք է անեք այնպես, որ նոր ռեստորանում
+	փոխվեն միայն մատուցողների անուններն ու տարիքները
+	բայց ներկա պահին ծրագիրը աշխատացնելուց տեսնում ենք, որ ինքը 
+	բավականին սխալ է աշխատում, նախ համ կլոնավորված ռեստորանն ա պարունակում
+	նույն տվյալները, հետո էլ տեսնում ենք որ մատուցող Alice-ը կորում ա
+	ու տեղը գալիս է ինչ-որ Mike, շտապ պետք է գտնել խնդիրը և ուղղել
+	որպեսի ռեստորանները իրարից անկախ լինեն։
 */
+
 const restorantData = {
-    menu: [{
-            name: 'Salad Caesar',
-            price: '14$'
-        },
-        {
-            name: 'Pizza Diavola',
-            price: '9$'
-        },
-        {
-            name: 'Beefsteak',
-            price: '17$'
-        },
-        {
-            name: 'Napoleon',
-            price: '7$'
-        }
-    ],
-    waitors: [{
-        name: 'Alice',
-        age: 22
-    }, {
-        name: 'John',
-        age: 24
-    }],
-    averageLunchPrice: '20$',
-    openNow: true
+	menu: [
+		{
+			name: "Salad Caesar",
+			price: "14$"
+		},
+		{
+			name: "Pizza Diavola",
+			price: "9$"
+		},
+		{
+			name: "Beefsteak",
+			price: "17$"
+		},
+		{
+			name: "Napoleon",
+			price: "7$"
+		}
+	],
+	waitors: [
+		{
+			name: "Alice",
+			age: 22
+		},
+		{
+			name: "John",
+			age: 24
+		}
+	],
+	averageLunchPrice: "20$",
+	openNow: true
 };
-
-function isOpen(prop) {
-    let answer = '';
-    prop ? answer = 'Открыто' : answer = 'Закрыто';
-
-    return answer;
+function isOpen(isOpen) {
+	if (isOpen) {
+		return ` Открыто ---- ${isAverageLunchPriceTrue(
+			restorantData.menu[0],
+			restorantData.menu[1],
+			restorantData.averageLunchPrice
+		)}`;
+	} else {
+		return `Закрыто`;
+	}
 }
-//console.log(isOpen(restorantData.openNow));
-
+console.log(isOpen(restorantData.openNow));
 
 function isAverageLunchPriceTrue(fDish, sDish, average) {
-    if (+fDish.price.slice(0, -1) + (sDish.price) < average) {
-        return 'Цена ниже средней';
-    } else {
-        return 'Цена выше средней';
-    }
+	if (
+		+fDish.price.slice(0, -1) + +sDish.price.slice(0, -1) <
+		+average.slice(0, -1)
+	) {
+		return "Цена ниже средней";
+	} else {
+		return "Цена выше средней";
+	}
 }
-//console.log(isAverageLunchPriceTrue(restorantData.menu[1], restorantData.menu[2], restorantData.averageLunchPrice));*/
-
-const copy = {};
-
-function transferWaitors(mainArr,arr){
-  arr = JSON.parse(JSON.stringify(mainArr));
-  arr.waitors[0].name = "Mike";
-  arr.waitors[0].age = 27;
-  arr.waitors[1].name = "Lucy";
-  arr.waitors[1].age = 30;
-  return arr;
+// recursion deep clone
+function cloneObject(obj) {
+	let clone = {};
+	for (let i in obj) {
+		if (typeof obj[i] == "object" && obj[i] != null) {
+			clone[i] = cloneObject(obj[i]);
+		} else {
+			clone[i] = obj[i];
+		}
+	}
+	return clone;
 }
-console.log(transferWaitors(restorantData,copy));
+let cloneObj = cloneObject(restorantData);
+cloneObj.waitors[0] = {
+	name: "Mike",
+	age: 32
+};
+console.log(cloneObj);
 console.log(restorantData);
-
 
 
 
