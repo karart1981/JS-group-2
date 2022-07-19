@@ -12,7 +12,6 @@ Java script-ը ավտոմատ ֆունկցիայի մեջ ստեղծում է le
 invarmement է ստեղծվում։
 
 */
-
 //1
 function colcul(n){
 	return function(){

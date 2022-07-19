@@ -108,12 +108,58 @@ let days = months.splice(2,2);
 console.log(days); // ["Monday", "Tuesday"]
 
 
-console.log(typeof +("5"));
-const num = 15;
+// loop example 1
+let arr_1 = [10, 11, 12, 13, 14, 15];
+let result = 1;
+for(let i = 0;i < arr.length;i++){
+	result = result * arr[i];
+}
+console.log(result);
 
-
-
-let i = 0;
-function a1(){
+// loop example2
+for(let i = 1; i <= 10;i++){
+	if(i%2 !==0){
+		console.log(i);
+	}else{
+		continue;
+	}
 	
 }
+// loop example 3
+for(let i = 0; i<3; i++){
+	for(let j = 0; j<3; j++){
+		console.log(j);
+	}
+	
+}
+
+// loop example 4
+let res = "";
+let count = 10;
+let counter = 0;
+for(let i = 0; i < count;i++){
+	if(count === counter){
+		break;
+	}
+	res += i + " ";
+	if(i === 2){
+		console.log(res);
+		res = "";
+		i = -1;
+		counter++;
+
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

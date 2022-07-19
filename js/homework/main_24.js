@@ -1,6 +1,7 @@
 "use strict";
 // homework about clouser
 //1
+
 function colcul(n){
 	return function(){
        console.log(1000 * n);
