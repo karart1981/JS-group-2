@@ -151,6 +151,15 @@ for(let i = 0; i < count;i++){
 	}
 }
 
+// splice example
+
+let months = ["January", "February", "Monday", "Tuesday"];
+let days = months.splice(2,2);
+
+console.log(days); // ["Monday", "Tuesday"]
+console.log(months);
+
+
 
 
 

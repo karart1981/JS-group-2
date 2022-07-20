@@ -46,3 +46,25 @@ function printNumber(n){
 }
 printNumber(100);
 
+// example 5
+const Start = 0;
+const Finish = 2;
+let result = "";
+let count = null;
+function recursia(start,finish){
+    if(result.length === 0){
+        count = start;
+    }
+    result += start + " ";
+    if(start === finish){
+        if(count < finish){
+            count++;
+            start = Start;
+            result += "\n";
+            recursia(start,finish);
+        }
+      return result;
+    }
+    return recursia(start+1, finish);
+}
+console.log(recursia(Start, Finish));

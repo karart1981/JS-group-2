@@ -149,7 +149,17 @@ function test(...argums){  // or params
 test("A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K");
 
 
+//deep clone version
+const names = { 
+	name: "Lucy", 
+	name2: "Arevik"
+};
+const cloneName = JSON.parse(JSON.stringify(names));
 
+names.name = "Nazli";
+names.name3 = "Lucy";
+console.log(names);
+console.log(cloneName);
 
 
 

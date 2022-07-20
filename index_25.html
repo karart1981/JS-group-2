@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title> Homework 25 </title>
+	<style>
+		* {
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+			}
+			
+		.menu {
+			font-size: 25px;
+			font-family: fantasy;
+			color: orangered;
+			list-style: none;
+			border: 2px solid grey;
+			background: #96CCFF;
+			height: 70px;
+			line-height: 60px;
+		}
+		.menu2 {
+			list-style: none;
+			color:#040467;
+			margin-left: 90px;
+		}
+		li {
+			display: inline;
+			margin-right: 70px;
+		}
+	    li:hover {
+			background: rgba(128, 128, 128, 0.3);
+			font-weight:bold;
+		}
+		.house5{
+			width: 20px;
+			height: 20px;
+			margin-right: 2px;
+		}
+		.city5 {
+			width: 20px;
+			height: 20px;
+			margin-right: 2px;
+		}
+		.visa5 {
+			width: 20px;
+			height: 20px;
+			margin-right: 2px;
+		}
+		.festival5 {
+			width: 20px;
+			height: 20px;
+			margin-right: 2px;
+		}
+		.contact5 {
+			width: 20px;
+			height: 20px;
+			margin-right: 2px;
+		}
+		a{
+			text-decoration: none;
+		}
+	    .background{
+		   background-image:url("https://www.technocrazed.com/wp-content/uploads/2015/12/Dubai-Wallpaper-26.jpg");
+		   background-size: cover;
+		   background-attachment: fixed;
+		   background-repeat: no-repeat;
+		   background-position: 0% 20%;
+		   width:100%;
+		   height:14000px;
+
+		}
+	    #uae3{
+		   width:80%;
+		   height:13300px;
+		   background: #96CCFF;
+		   margin-left: 130px;
+		   border-radius: 40px;
+
+	    }
+	    .flag{
+		   margin-left: 10px;
+	    }
+	    .image1{
+		   width:80%;
+		   height:550px;
+		   margin-left: 110px;
+		   margin-top: 0px;
+        }
+	    #khalifa1{
+		   text-align: center;
+		   line-height: 150px;
+		   font-family: cursive;
+		   font-size: 35px;
+		   color:darkslategrey;
+		   text-shadow: 1px 1px black;
+		   padding-top: 50px;
+	    }
+	    .top{
+		   margin-left: 20px;
+	    }
+	    #palm1{
+		   text-align: center;
+		   line-height: 150px;
+		   font-family: cursive;
+		   font-size: 35px;
+		   color:darkslategrey;
+		   text-shadow: 1px 1px black;
+		   padding-top: 0px;
+		}
+	    #village1{
+		   text-align: center;
+		   line-height: 150px;
+		   font-family: cursive;
+		   font-size: 35px;
+		   color:darkslategrey;
+		   text-shadow: 1px 1px black;
+		   padding-top: 0px;
+		}
+	    #jumeirah1{
+		   text-align: center;
+		   line-height: 150px;
+		   font-family: cursive;
+		   font-size: 35px;
+		   color:darkslategrey;
+		   text-shadow: 1px 1px black;
+		   padding-top: 0px;
+		}
+		#garden1{
+		   text-align: center;
+		   line-height: 150px;
+		   font-family: cursive;
+		   font-size: 35px;
+		   color:darkslategrey;
+		   text-shadow: 1px 1px black;
+		   padding-top: 0px;
+		}
+	    #aquarium1{
+		   text-align: center;
+		   line-height: 150px;
+		   font-family: cursive;
+		   font-size: 35px;
+		   color:darkslategrey;
+		   text-shadow: 1px 1px black;
+		   padding-top: 0px;
+		}
+	    #ski1{
+		   text-align: center;
+		   line-height: 150px;
+		   font-family: cursive;
+		   font-size: 35px;
+		   color:darkslategrey;
+		   text-shadow: 1px 1px black;
+		   padding-top: 0px;
+	    }
+	   #palace1{
+		   text-align: center;
+		   line-height: 150px;
+		   font-family: cursive;
+		   font-size: 35px;
+		   color:darkslategrey;
+		   text-shadow: 1px 1px black;
+		   padding-top: 50px;
+		}
+		#safari1{
+		   text-align: center;
+		   line-height: 150px;
+		   font-family: cursive;
+		   font-size: 35px;
+		   color:darkslategrey;
+		   text-shadow: 1px 1px black;
+		   padding-top: 0px;
+		}
+		#louvre1{
+		   text-align: center;
+		   line-height: 150px;
+		   font-family: cursive;
+		   font-size: 35px;
+		   color:darkslategrey;
+		   text-shadow: 1px 1px black;
+		   padding-top: 0px;
+		}
+		p{
+		   text-align:justify-all;
+		   text-indent: 30px;
+		   padding:50px;
+		   font-size: 25px;
+		   color: darkslategrey;
+        }
+	    p:first-letter{
+		   font-size: 45px;
+		   color:crimson;
+		   text-shadow: 2px 1px grey;
+	    }
+	    #nav li{
+		   display: block;
+		   padding-top: 20px;
+		   padding-left: 30px;
+		   font-size: 25px;
+		}
+	    a{
+		   color:darkslategrey;
+	    }
+	    h1{
+		   text-align: center;
+		   color:crimson;
+		   font-size: 45px;
+		   text-shadow: 2px 1px black;
+	    }
+	    .goback2{
+		   font-family:cursive;
+		   font-size: 30px;
+		   color:#744388FF;
+		   margin-top: -60px;
+		   margin-left: 80px;
+		}
+	    .goback1{
+		   margin-left:-30px;
+		   margin-top: 50px;
+	    }
+	    .goback{
+		   margin-left: 50px;
+	    }
+	</style>
+</head>
+<body>
+	<body>
+        <nav>
+		  <div class="menu">
+			<ul>
+			   <li> <a class="menu2" href=""> Գլխավոր </a> </li>
+			   <li> <a class="uae2" href=""> Տեսարժան վայրեր </a></li>
+			   <li> <a class="uae2" href=""> Վիզա </a></li>
+			   <li> <a class="uae2" href="">  Փառատոններ </a></li>
+			   <li> <a class="uae2" href="">  Հետադարձ կապ </a></li>
+			</ul>
+		  </div>
+		</nav>
+		<main>
+		  <div class="background">
+		  <div id="uae3">	<br><br><br>
+		  <h1 id="UAE"> ԱՄԷ </h1><br><br>
+		  <img class="flag" src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cb/Flag_of_the_United_Arab_Emirates.svg/255px-Flag_of_the_United_Arab_Emirates.svg.png" width="350" height="200">
+		   <p> ԱՄԷ-ն գտնվում է Հարավ-արևմտյան Ասիայում՝ Արաբական թերակղզու հարավարևելյան մասում։ ԱՄԷ-ն հարավից և արևմուտքից սահմանակից է Սաուդյան Արաբիային, հարավ-արևելքից և հյուսիս արևելքից Օմանի հետ։ ԱՄԷ-ի ափերը ողողում են Օմանի և Պարսից ծոցերը։</p>
+		   <div id="nav"><br><br><br>
+		   <ul id="ul">
+			    <li> <a href="#khalifa">⊳ Բուրջ Խալիֆա (Դուբայ) </a></li>
+				<li> <a href="#palm">⊳ Արմավենու կղզիներ (Դուբայ)</a></li>
+				<li> <a href="#village">⊳  Գյուղ «Ժառանգություն» (Դուբայ) </a></li>
+				<li> <a href="#jumeirah">⊳ Մադինաթ Ջումեյրա (Դուբայ) </a></li>
+				<li> <a href="#garden">⊳ Ծաղկի այգի Դուբայում </a></li>
+				<li> <a href="#aquarium">⊳  Ակվարիում Դուբայ Մոլում (Դուբայ) </a></li>
+				<li> <a href="#ski">⊳ Լեռնադահուկային համալիր Դուբայ Մոլում (Դուբայ) </a></li>
+				<li> <a href="#palace">⊳ ԱՄԷ-ի նախագահական պալատ (Աբու Դաբի) </a></li>
+				<li> <a href="#safari">⊳ Սաֆարի Դուբայում </a></li>
+				<li> <a href="#louvre">⊳ Թանգարան «Լուվր Աբու Դաբի» (Աբու Դաբի) </a></li>
+			</ul>
+			</div>
+					<div id="khalifa">
+						 <h3 id="khalifa1"> <b> Բուրջ Խալիֆա (Դուբայ) </b></h3>
+						 <img class="image1" src="https://th.bing.com/th/id/R.93671934db6fe7618a4c21e5463f7350?rik=vvBxSybV07irfA&riu=http%3a%2f%2f1.bp.blogspot.com%2f-kUNR8ejxeko%2fUmkBVDcY3QI%2fAAAAAAAAFcI%2fZDoL1k7f-4Y%2fs1600%2fBurj_Califa_Wallpaper.jpg&ehk=cqTUiy3VTXiyB1PgfA7JStc7MldXHiGfziWQoI5lJ9E%3d&risl=&pid=ImgRaw&r=0">
+						 <p> Բուրջ Խալիֆան (անվանվել է ի պատիվ ԱՄԷ-ի գործող (2011) նախագահ և Աբու Դաբիի Էմիր՝ շեյխ Խալիֆա Բին Զաիդ ալ Նախայանի ) 828 մ բարձրությամբ, այսօրվա դրությամբ հանդիսանում է աշխարհի ամենաբարձր կառույցը: 309,473 մ² հատակների մակերեսով երկնաքերի շինարարությունը արժեցել է մոտ US $1,5 մլրդ: Աշտարակը նախագծել է ամերիկական փորձառու «Սկիդմոր, Օուինգս ընդ Մերիլ» ձեռնարկությունը ( Skidmore, Owings and Merrill LLP,ճարտ. Էդրիան Սմիթ), իսկ գլխավոր կապալառուն է եղել հարավկորեական «Սամսունգ Էնջինիրինգ ընդ Քոնսթրաքշնը» (Samsung Engineering &amp; Construction): Շենքը հատակագծում ունի Y-ձև տեսք, որի «թևերը» հնարավորություն են տալիս մաքսիմալ օգտագործել արևային լույսը և վայելել քաղաքի համայնապատկերները պատուհաններից: Շենքը կառուցված է մոնոլիտ երկաթբետոնից իսկ վերին չբնակեցված մասը (մոտ 46 հարկ) պողպատյա կոնստրուկցիաներից: Ճակատը երեսպատված է չժանգոտվող պողպատով: Շենքում տեղակայված են կորպորատիվ և բնակելի տարածքներ, «Արմանի» հյուրանոցային համարներ և բնակարաններ, բազմաթիվ ռեստորաններ, հանգստի վայրեր, էլիտար խանութներ և այլն: Կառույցն ունի 58 վերելակ և 8 շարժասանդուղք: Աշտարակի կենտրոնական մասի Otis Elevators –ի արտադրության վերելակները սլանում են 18մ/վ արագությամբ և աշխարհում ամենաարագն հանդիսանում են այսօրվա դրությամբ: Շենքի կառուցապատողն է «Իմար Փրոփըրթիսը»(Emaar Properties), որն ԱՄԷ-ի անշարժ գույքի շուկայում ամենախոշոր ընկերությունն է: Ըստ կառուցապատողի՝ գրասենյակային տարածքների վաճառքի գներն հասել են US$43,000-ի 1 մ ² -համար, իսկ «Արմանի» բնակարաններինը մինչև US$37,500-ի:</p>
+						 <a href="#nav"> <img class="top" src="https://th.bing.com/th/id/R.f9a714f95a7d1b65a8e7d699b43e8a8d?rik=c%2fjtYWDDr1FhxA&pid=ImgRaw&r=0" width="70" height="70"> </a>
+				   </div>
+				   <div id="palm">
+					  <h3 id="palm1"> <b>  Արմավենու կղզիներ (Դուբայ)</b></h3>
+					 <img class="image1" src="https://7d9e88a8-f178-4098-bea5-48d960920605.selcdn.net/f8b97d36-c82b-4ff9-ab2e-99a5b57eac61/">
+					 <p id="p_2"> Աշխարհի ամենախոշոր « Արմավենի կղզի» անվանումը ստացած արշիպելագի կառուցումը սկսվեց Դուբայում 2001թ.: Այսպիսով ափը մեծացնելով մոտ 520կմ 14000 աշխատողներ կառուցեցին 3 արմավենիներից բաղկացած (Արևելքի ամենահայտնի և ամենապաշտելի ծառը)՝ Ջեբել Ալի, Դեյրա և Ջումեյրա արշիպելագը:Ջումեյրա Արմավենին շրջապատված է կիսալուսնով, որը համարվում է իսլամի խորհրդանիշ: Այն միանում է մայրցամաքին 300 մետր երկարություն ունեցող կամրջով, իսկ կիսալուսինը պալմայի գագաթին է միանում ջրային թունելով:«Արմավենի կղզիներ»-ում է գտնվում անհամեմատ շքեղ Ատլանտիս հյուրանոցը և այլ շքեղ հյուրանոցներ, բազմաթիվ առանձնատներ և բնակարաններ,որոնց մի մասը արդեն ձեռք են բերել աշխարհի ամենահարուստ մարդիկ:</p>
+					 <a href="#uae3"> <img class="top" src="https://th.bing.com/th/id/R.f9a714f95a7d1b65a8e7d699b43e8a8d?rik=c%2fjtYWDDr1FhxA&pid=ImgRaw&r=0" width="70" height="70"> </a>
+				  </div>
+				  <div id="village">
+					  <h3 id="village1"> <b> Գյուղ «Hatta Heritage Village»(Դուբայ)</b></h3>
+					 <img class="image1" src="https://kidpassage.com/images/activity/derevnya-naslediya-heritage-village/bdfd4aa3fc0f297361a3b7e46dcdc493.jpg">
+					 <p> «Hatta Heritage Village»-ը ավանդական վերակառուցված լեռնային գյուղ է, որը գտնվում է Հաթթայում, Ալ Հաջար լեռներում:Հաթթա Ժառանգության գյուղի մզկիթը և տները ի սկզբանե կառուցվել են այնպիսի նյութերից, ինչպիսիք են ցեխը, արմավենու բները և թևերը (բարաստի), եղեգը և քարը: Գյուղը բաղկացած է 30 շինություններից, որոնք ունեն ԱՄԷ-ի 1960-ական թվականների զարգացմանը նախորդող ժամանակաշրջանին բնորոշ ներքին կահավորանք:
+					 Գյուղը բացվել է հանրության համար 2001 թվականի փետրվարին՝ լայնածավալ վերանորոգումից հետո, և ներկայումս պատկանում և կառավարվում է Դուբայի մշակույթի և արվեստի նախարարության կողմից:</p>
+					 <a href="#uae3"> <img class="top" src="https://th.bing.com/th/id/R.f9a714f95a7d1b65a8e7d699b43e8a8d?rik=c%2fjtYWDDr1FhxA&pid=ImgRaw&r=0" width="70" height="70"> </a>
+				  </div>
+				  <div id="jumeirah">
+					  <h3 id="jumeirah1"> <b>Մադինաթ Ջումեյրա (Դուբայ)</b></h3>
+					 <img class="image1" src="https://i1.wp.com/entdubai.com/wp-content/uploads/2021/05/madinat-jumeirah.jpg?fit=1600%2C900&amp;ssl=1">
+					 <p> Թերևս Դուբայում չկա որևէ առևտրի կենտրոն, որը իր գեղեցկությամբ և այցելուի վրա թողած տպավորությամբ կարող է համեմատվել Մադինաթ Ջումեյրայի հետ: Այն գտնվում է Բուրջ Ալ Արաբ հյուրանոցի մոտ, կառուցվածքով հիշեցնում է արաբական միջնաբերդ:Մադինաթ Ջումեյրայի բոլոր կառույցները՝ աշտարակները, սրահները, ջրային….. պարզապես ներծծված են հնագույն պատմությամբ, և թվում է թե արաբական հեքիաթը այստեղ իրականություն է դառնում: Այն հիշեցնում է արաբական շուկա՝ անկրկնելի ջերմության և ուրախության մթնոլորտով: Հուշանվերներ և զարդեր վաճառողները աշխատում են չանտեսել ոչ մի այցելուի: Սրահների փոքրիկ խանութներում հագուստի և կոշիկի լավագույն բրենդների հարևանությամբ են գտնվում արաբական գորգեր, փայտե փղեր, աֆրիկյան՝ ավազից պատրաստված աբստրակտ աշխատանքներ: Այստեղ կան նաև բազմաթիվ ռեստորաններ և սրճարաններ:
+					 Աշխատանքային ժամերն են շաբաթ-հնգշաբթի 10:30 – 13:00 և 17:00 — 22:00, ուրբաթ 17:00- 22:00:</p>
+					 <a href="#nav"> <img class="top" src="https://th.bing.com/th/id/R.f9a714f95a7d1b65a8e7d699b43e8a8d?rik=c%2fjtYWDDr1FhxA&pid=ImgRaw&r=0" width="70" height="70"> </a>
+				  </div>
+				  <div id="garden">
+					  <h3 id="garden1"> <b> Ծաղկի այգի «Dubai Miracle Garden» (Դուբայ)</b></h3>
+					 <img class="image1" src="https://kuku.travel/wp-content/uploads/2021/01/slider01.jpg">
+					 <p> Սա ամենամեծ ծաղկային զբոսայգին  է աշխարհում: Եթե դուք ծաղիկների երկրպագու եք, ապա անկասկած պետք է այցելեք այս վայրը:  Այգու բացումը տեղի է ունեցել 2013 թվականին Սիրահարների տոնին:Այգու շուրջ ձգվում է հարյուր հազարավոր կիլոմետրեր ունեցող անապատ: Պետք է իմանալ, որ «Հրաշքների այգի» սովորաբար այցելում են տարին երկու անգամ: Հենց այդ ժամանակահատվածում էլ այգու ղեկավարությունը  հորինում է ավելի շատ նորարարություններ  այցելուներին գրավելու համար: Պետք է նշել, որ Դուբայի «Հրաշքների այգին»  հայտնվել է  Գինեսի ռեկորդների գրքում ՝շնորհիվ 3 մ բարձրությամբ և 800 մ երկարությամբ ծաղկային պատի։Բայս սա ամենը չէ.երկրորդ մրցանակն այգին ստացել է  ծաղկային  բուրգի համար, որի  բարձրությունը 10 մետր է: </p>
+					 <a href="#nav"> <img class="top" src="https://th.bing.com/th/id/R.f9a714f95a7d1b65a8e7d699b43e8a8d?rik=c%2fjtYWDDr1FhxA&pid=ImgRaw&r=0" width="70" height="70"> </a>
+				  </div>
+				  <div id="aquarium">
+					  <h3 id="aquarium1"> <b> Ակվարիում Դուբայ Մոլում (Դուբայ)</b></h3>
+					 <img class="image1" src="https://media-cdn.tripadvisor.com/media/photo-s/0a/15/13/e5/dubai-aquarium-underwater.jpg">
+					 <p> Աշխարհի ամենամեծ փակ ակվարիումն է, որտեղ կարելի է տեսնել ավել քան 33 000 ձուկ և ծովային կենդանի, այդ թվում, շնաձկներ և սկատ: 245 տոննա զանգվածով ակրիլային կարկասը ներառում է 10 մլն լիտր ջուր: Ակվարիումի միջով անցնում է թունել, որտեղից այցելուները հնարավորություն ունեն մոտ տարածությունից դիտել իրենց վրայով լողացող ջրային կենդանիներին: Ակվարիումը գրանցված է Գինեսի ռեկորդների գրքում որպես աշխարհում ամենամեծը: 2012թ վերջին ակվարիումը ստացավ «Certificate of Excellence» հեղինակավոր հավաստագիրը:</p>
+					 <a href="#nav"> <img class="top" src="https://th.bing.com/th/id/R.f9a714f95a7d1b65a8e7d699b43e8a8d?rik=c%2fjtYWDDr1FhxA&pid=ImgRaw&r=0" width="70" height="70"> </a>
+				  </div>
+				  <div id="ski">
+					  <h3 id="ski1"> <b> Լեռնադահուկային համալիր Դուբայ Մոլում (Դուբայ)</b></h3>
+					 <img class="image1" src="https://img.tourister.ru/files/1/7/8/5/3/9/8/8/clones/870_600_fixedwidth.jpg">
+					 <p> «Սկայ Դուբայը» Մերձավոր Արևելքում առաջին փակ լեռնադահուկային հանգստավայրն է, որն առաջարկում է բարձրակարգ սպորտային հանգիստ՝ դահուկասահք, սահնակով և սնոուբորդով սահք: Այն գտնվում է Դուբայից հարավ՝ Շեյխ Սայիդի անվան ճանապարհին, Ալ Բարշա գոտում։ Արաբական անապատի և շոգ արևի ֆոնին ԱՄԷ-ում դահուկային հանգիստը շատ էկզոտիկ է։ Չնայած երկրի մերձարևադարձային կլիմային, որտեղ ամռանը ջերմաստիճանը կարող է հասնել +50° C, սառցե պալատը պահպանում է ջերմաստիճանը -1° C-ից մինչև -2° C ամբողջ տարվա ընթացքում: Այսպիսով, ԱՄԷ-ում դահուկային տուրերը հասանելի են տարվա ցանկացած ժամանակ: «Սկայ Դուբայ» համալիրը այցելուներին առաջարկում է տարբեր դժվարության հինգ վայրէջքներ՝ սկսած սկսնակների համար ամենահեշտից մինչև 62 մ վայրէջք, սնոուբորդիստների թեքություն, թեքությունների լայն տեսականի և աշխարհի ամենամեծ ձնե խաղահրապարակը: Գործում է լեռնադահուկային ուղի, որը նախատեսված է ինչպես սկսնակների, այնպես էլ փորձառու մարզիկների համար, սահադաշտեր և ճոպանուղի։Աշխատանքային ժամերը՝ ամեն օր 10:00 - 22:00։ </p>
+					 <a href="#nav"> <img class="top" src="https://th.bing.com/th/id/R.f9a714f95a7d1b65a8e7d699b43e8a8d?rik=c%2fjtYWDDr1FhxA&pid=ImgRaw&r=0" width="70" height="70"> </a>
+				  </div>
+				  <div id="palace">
+					  <h3 id="palace1"> <b> ԱՄԷ-ի նախագահական պալատ</b></h3>
+					 <img class="image1" src="https://planetofhotels.com/guide/sites/default/files/styles/paragraph__live_banner__lb_image__1880bp/public/live_banner/%20UAE-2.jpg">
+					 <p> Քասր Ալ Վաթանը գործող նախագահական պալատ է և մշակութային հուշարձան, որտեղ յուրաքանչյուրը կարող է շոշափել ԱՄԷ-ի պատմությունն ու ավանդույթները: Այս պալատը պարզապես ապշեցուցիչ գեղեցիկ ճարտարապետական հուշարձան չէ: Այստեղ դուք կարող եք ավելի խորը պատկերացում կազմել արաբական աշխարհի պատմության և մշակույթի մասին տարբեր ցուցահանդեսների և միջոցառումների միջոցով:
+					 Պալատի ամենատպավորիչ իրադարձություններից մեկը «Palace In Motion» լույսի և երաժշտության տպավորիչ շոուն է, որը պատմում է ԱՄԷ-ի պատմությունը երեք հուզիչ գործողություններով: Ցուցադրությունը տեղի է ունենում պալատի գլխավոր մուտքի դիմաց ամեն օր՝ մայրամուտից կես ժամ հետո։ Միջոցառման մուտքը փակվում է մեկնարկից 30 րոպե առաջ։
+					 Բացման ժամերը` 11.00-19.00</p>
+					 <a href="#nav"> <img class="top" src="https://th.bing.com/th/id/R.f9a714f95a7d1b65a8e7d699b43e8a8d?rik=c%2fjtYWDDr1FhxA&pid=ImgRaw&r=0" width="70" height="70"> </a>
+				  </div>
+				  <div id="safari">
+					  <h3 id="safari1"> <b>Սաֆարի Դուբայում</b></h3>
+					 <img class="image1" src="https://media-cdn.tripadvisor.com/media/photo-s/15/0c/c5/4c/red-dunes-desert-camel.jpg">
+					 <p> Դուբայի գերժամանակակից կենտրոնից ընդամենը 20 րոպե երթևեկելուց հետո բացվում է Արաբական անապատը։ Սա ամենահայտնի տեսարժան վայրերից մեկն է։ Տուրօպերատորները առաջարկում են սաֆարի անապատում, որոնք ներառում են զանազան զվարճություններ՝ ավազաբլուրների վրա ամենագնացով երթևեկելով և քառացիկլով սահումից մինչև սենդբորդինգ, զբոսանք ուղտերով և խորոված։</p>
+					 <a href="#nav"> <img class="top" src="https://th.bing.com/th/id/R.f9a714f95a7d1b65a8e7d699b43e8a8d?rik=c%2fjtYWDDr1FhxA&pid=ImgRaw&r=0" width="70" height="70"> </a>
+				  </div>
+				  <div id="louvre">
+					  <h3 id="louvre1"> <b>Թանգարան «Լուվր Աբու Դաբի» (Աբու Դաբի)</b></h3>
+					 <img class="image1" src="https://saletur.ru/galery/tfoto_sights/big/28026.jpg">
+					 <p>Աբու Դաբիի Լուվրը գեղարվեստական թանգարան է Աբու Դաբիում, որը բացվել է 2017 թվականին։Այն աշխարհում միակ մասնաճյուղն է Լուվրի,որի հավաքածուի մեջ մտնում են տարբեր դարաշրջանների և քաղաքակրթությունների ցուցանմուշներ, այդ թվում՝ Պիկասոյի, Պոլ Գոգենի, Էդուարդ Մանեի, Ռենե Մագրիտի, Ջովանի Բելինիի նկարները։Թանգարանի շինությունը տեղակայված է Սաադիյատ կղզու վրա։ Կղզում են տեղակայվելու նաև Սողոմոն Գուգենհայմի թանգարանի մասնաճյուղը և Շեյխ Զաիդի ազգային պատմական թանգարանը։Թանգարանը ցույց կտա Լուվրի, Ժորժ Պոմպիդուի կենտրոնի, Վերսալի ցուցանմուշներից։Դեռ 2014 թվականին հայտարարվել էր, որ Աբու Դաբիի Լուվրը ֆրանսիական թանգարաններից վարձում է Լեոնարդո դա Վինչիի «Չքնաղ Ֆերոնիերային», Անրի Մատիսի աշխատանքները, Վան Գոգի ինքնանկարը, Ժակ Լուի Դավիդի «Նաոպելոնը Սեն Բերնար անցումում» կտավը, Կլոդ Մոնեի «Սեն Լազար կայարանը» աշխատանքը։</p>
+					 <a href="#nav"> <img class="top" src="https://th.bing.com/th/id/R.f9a714f95a7d1b65a8e7d699b43e8a8d?rik=c%2fjtYWDDr1FhxA&pid=ImgRaw&r=0" width="70" height="70"> </a>
+				  </div>
+				</div>
+			 </div>
+		 </main>
+	 </body>
+
+	<script src="./js/homework/main_25_2.js"></script>
+</body>
+</html>
